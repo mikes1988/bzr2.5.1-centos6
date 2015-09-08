@@ -6,7 +6,14 @@ ADD https://launchpad.net/bzr/2.5/2.5.1/+download/bzr-2.5.1.tar.gz /rpmbuild/SOU
 ADD bzr.spec /rpmbuild/SPECS/bzr.spec
 ADD builder /rpmbuild/builder
 
-RUN yum install rpm-build tar epel-release
+RUN yum install rpm-build \
+                tar \
+                epel-release \
+                python2-devel \
+                zlib-devel \
+                python-sphinx \
+                gettext \
+                Cython
 
 RUN tar --extract \
         --file /rpmbuild/SOURCES/bzr-2.5.1.tar.gz \
