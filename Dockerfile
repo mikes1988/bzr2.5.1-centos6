@@ -3,8 +3,9 @@ FROM centos:centos6
 MAINTAINER "Michael Edwards <mikes1988@gmail.com>"
 
 ADD https://launchpad.net/bzr/2.5/2.5.1/+download/bzr-2.5.1.tar.gz /rpmbuild/SOURCES/bzr-2.5.1.tar.gz
-ADD bzr.spec /rpmbuild/SPECS/bzr.spec
-ADD builder /rpmbuild/builder
+ADD bzr-2.5.1.tar.gz.sig /rpmbuild/SOURCES/
+ADD bzr.spec /rpmbuild/SPECS/
+ADD builder /rpmbuild/
 ADD bzr-cve2013-2099.patch /rpmbuild/SOURCES/
 ADD bzr-gpg-no-agent-error.patch /rpmbuild/SOURCES/
 
