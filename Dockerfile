@@ -4,7 +4,7 @@ MAINTAINER "Michael Edwards <mikes1988@gmail.com>"
 
 RUN mkdir /rpmbuild
 
-ADD https://launchpad.net/bzr/2.5/2.5.1/+download/bzr-2.5.1.tar.gz /rpmbuild/
+ADD https://launchpad.net/bzr/2.5/2.5.1/+download/bzr-2.5.1.tar.gz /rpmbuild/SOURCES/bzr-2.5.1.tar.gz
 
 ADD bzr.spec /rpmbuild/SPECS/
 
