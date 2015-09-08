@@ -6,6 +6,8 @@ RUN mkdir /rpmbuild
 
 ADD https://launchpad.net/bzr/2.5/2.5.1/+download/bzr-2.5.1.tar.gz /rpmbuild/SOURCES/bzr-2.5.1.tar.gz
 
+ADD bzr-2.5.1.tar.gz.sig /rpmbuild/SOURCES/
+
 ADD bzr.spec /rpmbuild/SPECS/
 
 ADD builder /rpmbuild/
