@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Script to wrap docker run to build the RPMs
+
+docker run --rm -v $PWD/output:/output mikes1988/bzr2.5.1-centos6
