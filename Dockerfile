@@ -4,11 +4,11 @@ MAINTAINER "Michael Edwards <mikes1988@gmail.com>"
 
 RUN mkdir /rpmbuild
 
-ADD https://launchpad.net/bzr/2.5/2.5.1/+download/bzr-2.5.1.tar.gz /rpmbuild/SOURCES/bzr-2.5.1.tar.gz
+ADD https://launchpad.net/bzr2.5/2.5.1/+download/bzr-2.5.1.tar.gz /rpmbuild/
 
-ADD bzr.spec /rpmbuild/SPECS/bzr.spec
+ADD bzr.spec /rpmbuild/SPECS/
 
-ADD builder /rpmbuild/builder
+ADD builder /rpmbuild/
 
 ADD bzr-cve2013-2099.patch /rpmbuild/SOURCES/
 
